@@ -1,3 +1,4 @@
+const { xdescribe } = require("mocha")
 
 function createAirport(n, a, g) {
   var airport = {
@@ -31,10 +32,24 @@ function landPlanes(airpor, landing) {
   }
 }
 
+function checkAirlineLocations (aList, airline) {
+  console.log(aList)
+  console.log(airline)
+  var x = [];
+  for (i=0; i<aList.length; i++){
+    if(aList[i].airlines.includes(airline)){
+      x.push(aList[i].name);
+    }
+  }
+  return x
+}
+
+
+
 
 module.exports = { 
   createAirport, 
   welcomeGuests, 
   landPlanes, 
-  // checkAirlineLocations
+  checkAirlineLocations
 };
