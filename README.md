@@ -43,6 +43,7 @@ Completing all of these test suites is not necessary, but you should be working 
 
 ### Test Suites
 - [ ] 🧚 ‍[Mythical Creatures](./mythical-creatures)
+  1 spicy left for hobbitses
 - [x] ✈️ [Airport](./airport)
 - [ ] 🎧 [DJ](./dj)
 - [ ] 🍔 [Favorite Foods](./favorite-foods)
