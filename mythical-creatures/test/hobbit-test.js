@@ -80,7 +80,7 @@ describe('Hobbit', function() {
     var hobbit2 = createHobbit('Samwise');
 
     assert.equal(getRing(hobbit1), 'Here is the ring!');
-    assert.equal(getRing(hobbit2), 'You can\'t have it!');
+s
   });
 
   it('should start with no acquaintances', function() {
