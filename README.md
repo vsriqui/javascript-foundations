@@ -55,7 +55,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [x] 📚 [Library](./library)
 - [ ] 🌮 [Taco Stand](./tacoStand/)
 - [ ] ✂️ [Barber Shop](./barber-shop/)
-- [ ] 🥗 [Meal Planning](./meal-planning/)
+- [x] 🥗 [Meal Planning](./meal-planning/)
 - [x] 🍜 [Restaurant](./restaurant/)
 - [x] 🧖‍♀️ [Spa](./spa/)
 - [x] 🎵 [Spotify](./spotify/)
