@@ -1,38 +1,45 @@
 module.exports = {  
 createBarber,
 giveCompliment,
-cutHair
+cutHair,
+listStyles
 };
 
 function createBarber(name, earnings, haircuts){
-   
-    var x = {
-        name: name,
-        earnings: earnings,
-        haircuts: haircuts,
-        
-    }
-    if (!x.haircuts) {
-        x.haircuts = []
-    }
-    if (!x.earnings) {
-        x.earnings = 0
-    }
-
-    return x
+   var barber = {
+    name: name,
+    earnings: earnings,
+    haircuts: haircuts,
+   } 
+   if (!haircuts) {
+    barber.haircuts = [];
+   }
+   if (!earnings) {
+    barber.earnings = 0
+   }
+   return barber
 }
 
+function giveCompliment(cut) {
 
-
-function giveCompliment(cut){
-    console.log(cut)
-    
     return `This ${cut.style} looks great!`
 }
-// need to iterate
-function cutHair(cut, a){
-    console.log(cut)
-    console.log(a)
+
+function cutHair (barber, cut) {
+    barber.haircuts.push(cut)
+    barber.earnings += cut.price
+    return barber
+}
+
+
+function listStyles (name, length) {
+    styl = [];
     
-    return cut.haircuts.length 
+    for (i=0; i<name.haircuts.length; i++) {
+    if (name.haircuts[i].hairLength === length) {
+        console.log(name.haircuts[i].style)
+        styl.push(name.haircuts[i].style)
+    }
+}
+    return styl
 }
