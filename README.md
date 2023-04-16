@@ -51,7 +51,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [x] 🎂 [Birthdays](./birthdays)
 - [ ] 🗓 [Calendar](./calendar/)
 - [x] 💵 [Vending Machine](./dollar-store-vending-machine/)
-- [ ] 🛗 [Elevator](./elevator/)
+- [x] 🛗 [Elevator](./elevator/)
 - [x] 📚 [Library](./library)
 - [x] 🌮 [Taco Stand](./tacoStand/)
 - [x] ✂️ [Barber Shop](./barber-shop/)
