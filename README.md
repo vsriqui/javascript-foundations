@@ -49,7 +49,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [ ] 🍔 [Favorite Foods](./favorite-foods)
 - [x] 🎮 [Video Games](./video-games/)
 - [x] 🎂 [Birthdays](./birthdays)
-- [ ] 🗓 [Calendar](./calendar/)
+- [x] 🗓 [Calendar](./calendar/)
 - [x] 💵 [Vending Machine](./dollar-store-vending-machine/)
 - [x] 🛗 [Elevator](./elevator/)
 - [x] 📚 [Library](./library)
