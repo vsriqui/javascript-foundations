@@ -2,35 +2,33 @@
 module.exports = {
     createIngredient,
     createTaco,
-    // addIngredientToTaco
+    addIngredientToTaco,
+    calculatePrice,
 }
 
-function createIngredient(meat, price) {
-    var ingredient = {
-        name: meat,
-        price: price
+function createIngredient (name, price) {
+    return {
+        name: name || 'unknown',
+        price: price || 0,
     }
-    if (meat === undefined) {
-        ingredient.name = 'unknown';
-    }
-    if (price === undefined) {
-        ingredient.price = 0.00
-    }
-    return ingredient;
 }
 
-function createTaco(name, filling) {
-    var taco = {
-        name: name,
-        ingredients: filling
+function createTaco (name, ingredients) {
+    return {
+        name: name || 'custom',
+        ingredients: ingredients || [],
     }
-    if (name === undefined) {
-        taco.name = 'custom'
-    }
-    if (filling === undefined) {
-        taco.ingredients = [];
-    }
-    return taco;    
 }
 
-// function addIngredientToTaco(taco, ingredient) {}
+function addIngredientToTaco (taco, ingredient) {
+    taco.ingredients.push(ingredient)
+    return taco
+}
+
+function calculatePrice (taco) {
+    finalPrice = 0;
+    for (i=0; i<taco.ingredients.length; i++) {
+    finalPrice += taco.ingredients[i].price
+    }
+    return finalPrice
+}
