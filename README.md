@@ -45,8 +45,8 @@ Completing all of these test suites is not necessary, but you should be working 
 - [ ] 🧚 ‍[Mythical Creatures](./mythical-creatures)
   1 spicy left for hobbitses
 - [x] ✈️ [Airport](./airport)
-- [ ] 🎧 [DJ](./dj)
-- [ ] 🍔 [Favorite Foods](./favorite-foods)
+- [x] 🎧 [DJ](./dj)
+- [x] 🍔 [Favorite Foods](./favorite-foods)
 - [x] 🎮 [Video Games](./video-games/)
 - [x] 🎂 [Birthdays](./birthdays)
 - [x] 🗓 [Calendar](./calendar/)
