@@ -5,7 +5,7 @@ module.exports = {
   celebrateBirthday, 
   getRing, 
   meetPeople, 
-  // findFriends
+  findFriends,
 }
 
 function createHobbit(nam, ag) {
@@ -60,13 +60,24 @@ function getRing(who) {
 function meetPeople(bilbo, people){
   
   for (i=0; i<people.length; i++){
-    bilbo.acquaintances.push(people[i])
-    console.log(bilbo)
-    console.log(people[i])
-  
-  
+    bilbo.acquaintances.push(people[i]) 
   }
   
   return bilbo
 }
 
+function findFriends(hobbitzy){
+  
+  buds = [];
+  
+  for (i=0; i<hobbitzy.acquaintances.length; i++) {
+    
+    if (hobbitzy.acquaintances[i].relationship === 'friend') {
+      
+      buds.push(hobbitzy.acquaintances[i].name);
+      
+    }
+  }
+ 
+  return buds
+}
